@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header class="bg-header">
+        <div class="container">
+            <div class="header">
+                <a class="logo-link" href="index.html">Coffee<span class="logo-span">blog</span></a>
+                
+                <nav class="nav">
+                    <a class="nav-link" href="about.html">About us</a>
+                    <a class="nav-link" href="courses.html">Courses</a>
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <div class="advices">
+                <h2>Coffee blog with advices and courses</h2>
+                <p>Learn from the experts with the best recipes and tips</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="title2">Contact</h2>
+
+        <div class="contact-bg"></div>
+        <form class="form" id="form">
+            <div class="fields">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div class="fields">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+
+            <div class="fields">
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="fields">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+
+            <input type="submit" class="btn btn-submit" value="submit">
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container header">
+            <a class="logo-link" href="#">Coffee<span class="logo-span">blog</span></a>
+            
+            <nav class="nav">
+                <a class="nav-link help" href="about.html">About us</a>
+                <a class="nav-link" href="courses.html">Courses</a>
+                <a class="nav-link active" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

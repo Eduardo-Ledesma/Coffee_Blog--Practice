@@ -1,0 +1,25 @@
+.about-div {
+    margin-bottom: 5rem;
+    border: 2px solid var(--lightGray);
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .about-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+@media (min-width: 768px) {
+    .div-grid-first {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
+.about-div img {
+    margin: 0;
+}
+.about-div p {
+    text-align: justify;
+    margin-top: 0;
+}

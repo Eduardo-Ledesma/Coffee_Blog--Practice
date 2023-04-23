@@ -1,0 +1,30 @@
+.upcoming {
+    margin-bottom: 5rem;
+    border-bottom: 1px solid var(--lightGray);
+    padding-bottom: 3rem;
+}
+@media (min-width: 768px) {
+    .upcoming {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        column-gap: 2rem;
+        padding-bottom: 5rem;
+    }
+    .upcoming:last-of-type {
+        border: none;
+        padding-bottom: 0;
+    }
+}
+@media (min-width: 768px) {
+    .upcoming-content h3 {
+        margin: 0;
+    }
+}
+.upcoming-content li {
+    font-size: 2rem;
+}
+.upcoming-content p {
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 1.7;
+}

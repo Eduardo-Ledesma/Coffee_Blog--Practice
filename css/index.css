@@ -1,0 +1,226 @@
+:root {
+    --white: beige;
+    --black: #000;
+    --orange: #e98b07;
+    --brown: #88310b;
+    --darkBrown: #5b2108;
+    --lightGray: #b2abab;
+    --blue: #105d84;
+    --darkBlue: #0d4561;
+    --form: #e2dedee6;
+    --btnSubmit: #0e0d0d;
+    --red: #a31616;
+    --green: #146d0e;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+.container {
+    max-width: 120rem; 
+    width: 95%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%; 
+}
+.title2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5rem auto;
+}
+
+/* --- START --- */
+.bg-header {
+    background-image: url(../img/banner.webp);
+    height: 60rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+    display: grid;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .header {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+.logo-link {
+    color: var(--white);
+    font-size: 7rem;
+    font-weight: normal;
+    margin-top: 2rem;
+}
+.logo-link:last-of-type {
+    margin-top: 0;
+}
+.logo-span {
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+        justify-content: right;
+        column-gap: 1rem;
+    }
+}
+.nav-link {
+    color: var(--white);
+    font-size: 2.4rem;
+    border: 2px solid var(--white);
+    border-radius: .5rem;
+    padding: .5rem 0;
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    transition: background-color .5s ease, color .5s ease, border .5s ease
+}
+
+@media (min-width: 768px) {
+    .nav-link {
+        padding: .5rem 1rem;
+    }
+}
+.nav-link:hover {
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    background-color: #ffffffc2;
+}
+.active {
+    border: 2px solid var(--orange);
+    color: var(--orange);
+}
+.advices {
+    color: var(--white);
+    text-align: center;
+    margin-top: 7rem;
+}
+@media (min-width: 768px) {
+    .advices {
+        margin-top: 20rem;
+    }
+}
+.advices h2 {
+    font-size: 3.6rem;
+    margin: 0;
+}
+.advices p {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* --- MAIN --- */
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+}
+.main-title {
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.article {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--lightGray);
+}
+@media (min-width: 768px) {
+    .article:last-of-type {
+        border: none;
+    }
+}
+
+.title-intro {
+    font-size: 2.6rem;
+    margin: 1rem 0 0 0;
+    color: var(--brown);
+    font-weight: 700;
+}
+.article-content p {
+    text-align: justify;
+}
+.btn {
+    display: block;
+    color: var(--white);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.btn-entry {
+    background-color: var(--brown);
+    transition: background-color .5s ease;
+}
+.btn-entry:hover {
+    background-color: var(--darkBrown);
+}
+@media (min-width: 768px) {
+    .btn-entry {
+        display: inline-block;
+    }
+}
+
+/* --- ASIDE --- */
+.border-div {
+    border-bottom: 1px solid var(--lightGray);
+    margin-bottom: 5rem;
+}
+.border-div:last-of-type {
+    border: none;
+}
+.list {
+    margin: 2rem 0;
+    padding: 0;
+}
+.list li {
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+li span {
+    font-weight: 400;
+}
+.btn-info {
+    background-color: var(--blue);
+    border-radius: .5rem;
+    transition: background-color .5s ease;
+}
+.btn-info:hover {
+    background-color: var(--darkBlue);
+}
+
+/* --- FOOTER --- */
+.footer {
+    background-color: var(--black);
+    padding-bottom: 2rem;
+}
+.help {
+    margin-top: 0;
+}
+@media (min-width: 768px) {
+    .help {
+        margin-top: 2rem
+    }
+}
